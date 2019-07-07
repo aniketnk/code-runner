@@ -1,0 +1,11 @@
+  {
+  "language": "cpp",
+  "testCases": ["1", "2", "3"],
+  "timeout": "0.01s",
+  "files": [
+    {
+      "name": "foo.cpp",
+      "content": "#include <stdio.h>\nint main(){ //Test comment. \nint w; scanf(\"%d\", &w); printf(\"Number: %d\", w);   return 0;}"
+    }
+  ]
+}
