@@ -69,6 +69,11 @@ func main() {
 		payload.TestCases = []string{payload.Stdin}
 	}
 
+	// Add an empty string as the default test case if none present
+	if len(payload.TestCases) < 1 {
+		payload.TestCases = []string{""}
+	}
+
 	// Set the default timeout to 0 (disables the timeout)
 	if payload.Timeout == "" {
 		payload.Timeout = "0"
